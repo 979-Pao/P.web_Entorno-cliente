@@ -1,0 +1,348 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    size:10px ;
+    line-height: 3.5em;
+    weight: 300;
+    max-width: 1920px;
+  }
+  
+  .header {
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2em;
+  }
+  
+  /* CSS multiselector examplen */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  }
+  
+  h1 {
+    font-size: 9em;
+    text-align: center;
+    Transform: uppercase;
+    line-height: 2em;
+  }
+  
+  h2 {
+    font-size: 5em;
+    text-align: center;
+    Transform: uppercase;
+    line-height: 1em;
+  }
+  
+  h3 {
+    font-size: 4.2rem;
+    text-align: center;
+    Transform: 1em;
+  }
+  
+  h4 {
+    font-size: 1.5em;
+    text-align: 0.4px;
+    Transform: 1em;
+  }
+  
+  h5 {
+    font-size: 1.2em;
+  }
+  
+  .nav-bar {
+  background-color: darkblue;
+  justify-content: center;
+  max-width: 1920px;
+  }
+  
+  .nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    list-style: none;
+    font-weight: bold;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 200px;
+    justify-content: center;
+  }
+  
+  .background {
+    height: 650px; 
+    background-image: url(https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg);
+    position: 0 0;
+    background-repeat: no-repeat;
+    size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  
+  .background h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  .background h2 {
+    color: white;
+    text-shadow: #020819 8px -20px 9px;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
+  .background p {
+    color: black;
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+  
+  .quote {
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 2em;
+  }
+  
+  /* general-information */
+  
+  .dark-background {
+    background-color: darkblue;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    /*gap: 15rem;*/
+    gap: 5px 60px; /* 5px entre filas, 10px entre columnas */
+    margin-top: 0.5rem;
+    margin-bottom: 2em;
+    overflow: hidden;
+    justify-content: center;
+    max-width: 1920px;
+    }
+  
+  .card {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2em;
+  }
+  
+  .card h3 {
+    font-size: xx-large;
+    
+  }
+  
+  .card p {
+    font-size: x-large;
+    line-height: 2em;
+  }
+  
+  
+  .link-btn {
+  background-color: rgb(100, 124, 220);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  }
+  
+  /* structure */
+  
+  .service-box {
+    font-size: 1.7em;
+    text-align: center;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+    padding: 3rem 3rem;
+  }
+  
+  .service-box p {
+    line-height: 1.5;
+  }
+  
+  .container-box {
+    display: grid;
+    grid-template-columns: repeat(2, 650px);
+    gap: 8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2em;
+    overflow: hidden;
+    justify-content: center;
+    max-width: 1920px;
+    margin-bottom: 7em;
+  }
+  
+  .service-box img {
+   width: 125px;
+  }
+  
+  
+  /* team */
+  
+  .Title {
+  text-align: center;
+  line-height: 1.8em; 
+  }
+  
+  .section-text {
+    font-size: 1.9em;
+    text-align: center;
+    line-height: 1.5em; 
+  }
+  
+  .member-name {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  
+  .content{
+    padding: 0px 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2em;  
+    align-items:end;
+    height: 340px;
+    grid-row:  2 / 3;    
+  }
+  
+  .horizont {
+    display: grid !important;
+    grid-template-columns: auto; /* 1 sola columna */
+    grid-column: 1 / 4; /* Ocupa desde la columna 2 hasta la 4 */
+  }
+    
+  #team img {
+    width: 250px;
+    height: 180px;
+  }
+  
+  /* schedule */
+  
+  #schedule {
+    text-align: center;
+    padding: 50px 0;
+    max-width: 1920px;
+  }
+  
+  #schedule .table-schedule{
+    padding: 0px 50px;
+  }
+  
+  .table-schedule{
+    width: 60%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    text-align:center;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+    padding: 5px;
+  }
+  
+  .table-schedule th,
+  .table-schedule td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  }
+  
+  .table-schedule th {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  form input, form select {
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+    padding: 5px;
+    max-width: 1920px;  
+  }
+  
+  form button {
+    display: block;
+    width: 10%;
+    margin: 20px auto;
+    padding: 1px;
+    max-width: 1920px;  
+  }
+  
+  /* footer */
+  
+  footer .dark-background footer{
+    font-size: 1.9em;
+    text-align: center;
+  }
+  
+  .footer {
+    height: 600px;
+    align-items: center; 
+  }
+  
+  .address {
+    font-style: normal;
+    font-size: 1em;
+    line-height: 2em; 
+  }
+  
+  .address ul {
+    color: blue;
+    text-decoration: none;
+    list-style: none;
+    line-height: 2em; 
+  }
+  
+  .address h5 {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: blue;
+    text-decoration: none;
+  }
+    
+  iframe {
+    position: relative;
+    top: -400px;   /* Desplaza el iFrame 20px hacia abajo */
+    left: 400px;  /* Desplaza el iFrame 30px hacia la derecha */
+  }
+  

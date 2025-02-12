@@ -1,0 +1,282 @@
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+      line-height: 1.4;
+      margin: 0px;
+      color: #333333;
+      background-color: #a9bed5;
+      top: 0;
+      z-index: 1000;
+     }
+  
+  .header {
+      background-color: rgb(15, 20, 35);
+      color: rgb(197, 192, 171);
+      display:flex;
+      justify-content:space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      padding: 0px 20px;
+  }
+  img {
+    width: 180px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .logo {
+      font-size: 1rem;
+      font-weight: 500;
+  }
+  .ult {
+      margin-left: auto;
+  }
+    
+  .ult ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .ult a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+  
+  .ult a:hover {
+      color: #ffd700;
+    }
+  
+    .hero {
+      color: #2a0606;
+      background-color: #d5dfe7;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    
+    h1 {
+      color: #1c1c1c;
+    }
+  
+    #seccion-inicio p {
+      color: #110202;
+    }
+     
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .hero p {
+       font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  
+  .nav {
+      background-color: #444;
+      color: white;
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid #071d34;
+  }
+  .nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+  }
+  .nav ul li {
+      margin: 0;
+  }
+  .nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 1rem 2rem;
+      display: block;
+      border: 2px solid transparent;
+      border-bottom: none;
+      background-color: #444;
+  }
+  .nav ul li a:hover, .nav ul li a.active {
+      background-color: #080864;
+      border-color: #007BFF #8fa5e2 transparent;
+      color: white;
+  }
+  
+  
+  
+  /* Secciones */
+  .section {
+      padding: 2rem;
+  }
+  .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #222;
+  }
+  
+  /* Artículos */
+  .article {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+  }
+  .article-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+  }
+  .article-content {
+      text-align: justify;
+      text-indent: 2em;
+      letter-spacing: 0.5px;
+      line-height: 1.8;
+      column-count: 1;
+      column-gap: 1rem;
+  }
+  .article-content .highlight {
+      color: #007BFF;
+      font-weight: bold;
+  }
+  .card-container1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; /* Para que se ajuste al centro horizontal */
+      max-width: 1000px; /* Tamaño máximo del container */
+      padding: 11px; /* Espaciado interno opcional */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el card */
+      background: #fff; /* Fondo blanco del card */
+      border-radius: 12px; /* Bordes redondeados */
+    }
+    .card-container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; /* Para que se ajuste al centro horizontal */
+      max-width: 1000px; /* Tamaño máximo del container */
+      padding: 16px; /* Espaciado interno opcional */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el card */
+      background: #fff; /* Fondo blanco del card */
+      border-radius: 12px; /* Bordes redondeados */
+    }
+    .card-container3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; /* Para que se ajuste al centro horizontal */
+      max-width: 1000px; /* Tamaño máximo del container */
+      padding: 16px; /* Espaciado interno opcional */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el card */
+      background: #fff; /* Fondo blanco del card */
+      border-radius: 12px; /* Bordes redondeados */
+      padding: 10px 50px 20px;;
+    }
+    .box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: #e0ede0;
+      border-radius: 8px;
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align:start;
+      transition: transform 0.3s ease;
+      margin: 3px;
+    }
+    .card:hover {
+      transform:translateY(-6px);
+    }
+    .card img {
+      height: auto;
+      display: block;
+      margin: 20px 0px 0 35px;
+    }
+    .card h3 {
+      margin: 0 2rem 2rem;
+      font-size: 1.1rem;
+      color: #2b2727;
+    }
+    .card h4 {
+      margin: 1rem;
+      font-size: 1.25rem;
+      text-align: center;
+      color: #cb1515;
+    }
+  
+    .card p {
+      margin: 0 2rem 2rem;
+      font-size: 1.1rem;
+      color: #2b2727;
+    }
+  
+  
+  /* Aside */
+  .aside {
+      padding: 2rem;
+      background: #f4f4f4;
+      border-top: 3px solid #007BFF;
+  }
+  .aside1 {
+      padding: 2rem;
+      background: #f4f4f4;
+      border: 2px solid #2362a4;
+      border-radius: 8px;
+      text-align: right;
+      list-style: none;
+      text-decoration: none;
+  }
+  .aside1 ul {
+    padding: 1rem;
+    background: #f4f4f4;
+    border-top: 2px solid #007BFF;
+    text-align: right;
+    list-style: none;
+    text-decoration: none;
+  }
+  .aside1 ul li a{
+    list-style: none;
+    text-decoration: none;
+  }
+  .aside-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+  }
+  .aside ul {
+      list-style: none;
+      padding: 0;
+  }
+  .aside ul li {
+      margin-bottom: 0.5rem;
+  }
+  .aside ul li a {
+      text-decoration: none;
+      color: #007BFF;
+  }
+  .aside ul li a:hover {
+      text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 1rem 0;
+      margin-top: 2rem;
+  }
+  
