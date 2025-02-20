@@ -18,11 +18,11 @@ Si vives cerca AND tienes ganas de caminar, te vas andando y ya lo arreglarás m
  */
 
 
-let vivesCerca = true; // Cambiar según la situación
-let ganasDeCaminar = false; // Cambiar según la situación
-let tieneGasolina = false; // Cambiar según la situación
-let tienesDinero = false; // Cambiar según la situación
-let tieneBateria = true; // Cambiar según la situación
+let vivesCerca = true; //según la situación
+let ganasDeCaminar = false; // según la situación
+let tieneGasolina = false; // según la situación
+let tienesDinero = false; // según la situación
+let tieneBateria = true; // según la situación
 
 if (vivesCerca && ganasDeCaminar) {
     console.log("Te vas andando y ya lo arreglarás mañana.");
