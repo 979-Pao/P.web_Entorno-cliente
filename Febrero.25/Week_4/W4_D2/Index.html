@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio_Formularios</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="desplegable.css">
+  </head>
+  <body>
+    <h1>EMPRESA</h1>
+    <h2>Formulario de Registro</h2>
+
+    <div class="container">
+
+      <!-- Formulario principal -->
+      <form action="#" method="GET">
+        <!-- Nombre -->
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+          />
+        </div>
+
+        <!-- Apellido -->
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Tu apellido"
+            required />
+        </div>
+
+        <!-- Edad -->
+        <div>
+          <label for="edad">Edad:</label>
+           <input
+              type="number"
+              id="edad"
+              name="edad"
+              min="18"
+              max="120"
+              placeholder="0"
+            />
+        </div>       
+
+        <!-- Email -->
+        <div>
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ejemplo@correo.com"
+            required
+          />
+        </div>
+
+        <!-- Asunto -->
+        <div>
+            <label for="asunto">Asunto:</label>
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              placeholder="Asunto"
+              required />
+          </div>
+
+        <!-- Textarea (comentarios) -->
+        <div>
+          <label for="comentarios">Comentarios adicionales:</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="150"
+            placeholder="Escribe aquí tus comentarios o sugerencias..."
+          ></textarea>
+        </div>
+
+        <!-- Input oculto (hidden) - Ejemplo | Ahora mismo esto "no tiene sentido", pero a veces queremos mandar información a código sin que el usuario la vea. Así podríamos hacerlo.-->
+        <input type="hidden" name="origen" value="formularioVideoclub" />
+
+        <!-- Botón de envío -->
+        <button type="submit">Enviar datos</button>
+      </form>
+    </div>
+
+    <h2>TIENDA PIZZERIA BROTHERS</h2>
+
+    <div class="container2">
+
+        <!-- Formulario principal -->
+        <form action="#" method="GET">
+          <!-- Selector desplegable (Dropdown) -->
+          <div>
+            <label for="genero">Sr/Sra./Otre:</label>
+            <select id="genero" name="genero">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="sr">Sr.</option>
+                  <option value="sra">Sra.</option>
+                  <option value="otre">Otre</option>
+            </select>
+          </div>
+
+          <!-- Nombre -->
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+   
+          <!-- Teléfono -->
+          <div>
+            <label for="telefono">Teléfono de contacto:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="123456789"
+            />
+          </div>
+
+          <!-- Selector desplegable (Dropdown) -->
+          <div>
+            <label for="tipo-pizza">Escoge el tipo de pizza:</label>
+            <select id="tipo-pizza" name="tipo-pizza">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="sr">Pizza margarita.</option>
+                  <option value="sra">Pizza cuatro quesos</option>
+                  <option value="otre">Pizza de pepperoni.</option>
+                  <option value="sr">Pizza con champiñones. </option>
+                  <option value="sra">Pizza hawaiana.</option>
+                  <option value="otre">Pizza marinera</option>
+            </select>
+          </div>        
+
+        <!-- Checkbox (Ingredientes extra) -->
+        <div>
+            <label>Ingredientes extra:</label>
+            <div class="checkbox-group">
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra[]"
+                  value="salmon-ahumado"
+                />Salmón ahumado</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra[]"
+                  value="Jamon-Serrano"
+                />Jamón Serrano</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra[]"
+                  value="parmesano"
+                />Parmesano</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra[]"
+                  value="Aceite-oliva-ajo"
+                />Aceite de Oliva y Ajo</label
+              >
+            </div>
+          </div>
+
+          <!-- Textarea (comentarios) -->
+          <div>
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea
+              id="comentarios"
+              name="comentarios"
+              rows="4"
+              placeholder="Escribe aquí tus comentarios o sugerencias..."
+            ></textarea>
+          </div>
+  
+          <!-- Input oculto (hidden) - Ejemplo | Ahora mismo esto "no tiene sentido", pero a veces queremos mandar información a código sin que el usuario la vea. Así podríamos hacerlo.-->
+          <input type="hidden" name="origen" value="formularioVideoclub" />
+  
+          <!-- Botón de envío -->
+          <button type="submit">Enviar a casa </button>
+          <button type="submit">Venir a buscar</button>
+        </form>
+      </div>
+
+  </body>
+</html>

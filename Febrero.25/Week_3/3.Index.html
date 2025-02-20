@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto_Semana-3</title>
+    <link rel="stylesheet" href="3.style.css">
+</head>
+<body>
+  <header>
+        <h1>PROYECTO SEMANA 3</h1>
+        <nav>
+          <ul>
+            <li><a href="#Sobre_mi">SOBRE MI</a></li>
+            <li><a href="#Personajes_favoritos">PERSONAJES FAVORITOS</a></li>
+            <li><a href="#Bomb-attack">BOMB-ATTACK</a></li>
+            <li><a href="#animacion_keyframes">ANIMACION (KEYFRAMES)</a></li>
+          </ul>
+        </nav>
+  </header>
+
+  <section class="hero">
+    <h2></h2>
+    <p>
+    </p>
+  </section>
+
+  <section class="Sobre_mi" id="Sobre_mi">
+      <div class="intro">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQEEkMhSs4sduw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1721735707560?e=1744243200&v=beta&t=nN4Lu5YTw3GX7PtH6jQWFpEhstl0-xNWq92TB3YQwJA" alt="Foto de perfil">  
+      <h1>Hola, soy Paola M.</h1>
+      <p>A continuacion, un poco sobre mí</p>
+      </div>
+      <div class="grid-hobbies">
+          <article>
+            <img
+              src="https://okdiario.com/img/2022/03/30/es-posible-leer-un-libro-al-dia-asi-puedes-conseguirlo-655x368.jpg"
+              alt="Hobbie 1"
+            />
+            <h3>El placer de la lectura</h3>
+            <p>
+              Se necesita sentir asombro ante lo que expresan las palabras para entender el verdadero significado de la lectura.
+            </p>
+          </article>
+          <article>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVIlvUNQJlmazZLLSazdEDmfFT__UPiQTpw&s"
+              alt="Hobbie 2"
+            />
+            <h3>Arte y Movimiento corporal</h3>
+            <p>
+             Mover el cuerpo de forma habitual potencia la salud mental.
+            </p>
+          </article>
+          <article>
+            <img
+              src="https://www.vivood.com/imagenes/viajar_en_pareja_beneficios.jpg"
+              alt="Hobbie 3"
+            />
+            <h3>Viajes y viajes</h3>
+            <p>
+              Viajar te enseña a relativizar, a desprenderte de lo superfluo y a valorar lo intangible.
+            </p>
+          </article>
+      </div>
+      <div>
+          <section class="hobbies-container">
+            <h2>Comparto otros hobbies que voy explorando</h2>
+            <div class="card_hobbies">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPkjQylxg83H79TssRdGNAcr4WQMpQZE17bw&s"
+                  alt="Hobbie 4"
+                />
+                <h3>Senderismo</h3>
+                <p>
+                  Por sendas, caminos rurales y vías verdes
+                </p>
+              </div>
+              <div class="card">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Hobbie 5"
+                />
+                <h3>Practica musical</h3>
+                <p>
+                  Utilizando la música para lograr objetivos terapéuticos.
+                </p>
+              </div>
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvOWZ76ochhhkkuNqNPI0p8WmUjRaWtiNrQ&s"
+                  alt="Hobbie 6"
+                />
+                <h3>Yoga</h3>
+                <p>
+                  Practica del yoga terapéutico, para aliviar dolencias y promover la salud integral.
+                </p>
+              </div>
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS51hHIshQ2LTTyfXxzIJAQuw29eQH8qvumtQ&s"
+                  alt="Hobbie 7"
+                />
+                <h3>Historia, cultura</h3>
+                <p>
+                  Descubrir la diversidad de nuestro patrimonio cultural mundial
+                </p>
+              </div>
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo_JcFnDYpNsolPRcy-hQmuF5TMV2hltIKmQ&s"
+                  alt="Hobbie 8"
+                />
+                <h3>Diseño arquitectonico</h3>
+                <p>
+                  Diseño, despliegue creativo en la construccion estética y funcional
+                </p>
+              </div>
+            </div> 
+          </section>
+      </div>
+  </section>
+
+  <section id="Personajes_favoritos">
+    <h3>PERSONAJES FAVORITOS</h3>
+     <div class="container-box">
+
+      <article class="service-box">
+       <img src="https://www.welcomechile.com/personas-y-personajes/condorito/condorito-uno.jpg" alt="icon1">
+
+       <h4 class="article-title">CONDORITO</h4>
+      </article>
+      <article class="service-box">
+       <img src="https://escribiendocine-s3.cdn.net.ar/s3i233/2024/03/escribiendocine/images/51/51/515159_957ba570e6e07b7cb1fc49cdf3d3e4ba732e8277feb283afe0c4703473dae5fa/lg.webp" alt="icon2">
+       <h4 class="article-title">OSO TED</h4>
+      </article>
+      <article class="service-box">
+       <img src="https://img.buzzfeed.com/buzzfeed-static/static/2022-12/1/20/asset/ca3a4a5e595a/sub-buzz-3138-1669926588-16.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" alt="icon3">
+       <h4 class="article-title">DORIS (SHREK)</h4>
+      </article>
+      <article class="service-box">
+       <img src="https://i.pinimg.com/236x/ce/97/50/ce9750244655d06361a2365fc9d57b29.jpg" alt="icon4">
+       <h4 class="article-title">ANGELICA PICKLES (RUGRATS) </h4>
+      </article>
+      <article class="service-box">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/cg_disney_iceagescrattales_mobile_22737_97d224f6.jpeg?region=0,2,1024,577&width=960" alt="icon4">
+        <h4 class="article-title">ARDILLA (ERA DEL HIELO)</h4>
+       </article>
+       <article class="service-box">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/0*p7MZfTnmo5x4b5Yu.jpg" alt="icon4">
+        <h4 class="article-title">PRINCESS CAROLYN</h4>
+       </article>
+     </div>
+  </section>
+
+<br><br>
+
+  <section id="Bomb-attack">
+   <h3>EJERCICIO BOMB-ATTACK</h3>   
+    <div class="bomb-grid">
+      <div class="bomb-container">
+          <div class="bomb">
+              <div class="bomb-face bomb-front">1</div>
+              <div class="bomb-face bomb-back"></div>
+          </div>
+      </div>
+        
+      <div class="bomb-container">
+          <div class="bomb">
+          <div class="bomb-face bomb-front">2</div>
+          <div class="bomb-face bomb-back"></div>
+          </div>
+      </div>
+        
+      <div class="bomb-container">
+          <div class="bomb">
+          <div class="bomb-face bomb-front">3</div>
+          <div class="bomb-face bomb-back"></div>
+          </div>
+      </div>
+        
+      <div class="bomb-container">
+          <div class="bomb">
+              <div class="bomb-face bomb-front">4</div>
+              <div class="bomb-face bomb-back"></div>
+          </div>
+      </div>
+        
+      <div class="bomb-container">
+          <div class="bomb">
+              <div class="bomb-face bomb-front">5</div>
+              <div class="bomb-face bomb-back"></div>
+          </div>
+      </div>
+        
+      <div class="bomb-container">
+          <div class="bomb">
+              <div class="bomb-face bomb-front">6</div>
+              <div class="bomb-face bomb-back1"></div>
+          </div>
+      </div>
+        
+      <div class="bomb-container">
+          <div class="bomb">
+              <div class="bomb-face bomb-front">7</div>
+              <div class="bomb-face bomb-back"></div>
+          </div>
+      </div>
+        
+      <div class="bomb-container">
+          <div class="bomb">
+              <div class="bomb-face bomb-front">8</div>
+              <div class="bomb-face bomb-back"></div>
+          </div>
+      </div>
+        
+      <div class="bomb-container">
+          <div class="bomb">
+              <div class="bomb-face bomb-front">9</div>
+              <div class="bomb-face bomb-back"></div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+  <section id="animacion_keyframes">
+  <h3>ANIMACION KEYFRAMES</h3>   
+   <div class="container_animation">
+   <div class="cuadradoacirculo">
+    <h2>DE CUADRADO A CIRCULO</h2>
+    <br><br>
+    <div class="cuadrado"></div>
+   </div>
+   <div class="containerpelota">
+    <h2>ANIMACION PELOTA</h2>
+    <br><br>
+    <div class="pelotaBox ball"></div>
+   </div>
+   </div>
+<br>
+  <div class="container_animation2">
+    <h2>ANUNCIO (ANIMACION)</h2>
+    <br>
+    <div class="logo">
+      <h2>CONCESIONARIOS PACO</h2>
+    </div>
+    <br>
+    <div class="slogan">
+      <h2>“Nos los quitan de las manos”</h2>     
+    </div>
+    <br>
+    <div class="imagen">
+      <h2>Imagen</h2>
+      <img src="https://media.istockphoto.com/id/1952026141/es/vector/ilustraci%C3%B3n-vectorial-de-un-coche-volador-despegando-coche-volador-deportivo-de-dibujos.jpg?s=612x612&w=0&k=20&c=KX5JQYsSFk8C5EuZN2hRK0D0QRcwTXZo2N5PlVbf5c8=" alt="coche">
+    </div>
+  
+  </div>
+ 
+    <br><br>
+</section>
+
+</body>
+</html>

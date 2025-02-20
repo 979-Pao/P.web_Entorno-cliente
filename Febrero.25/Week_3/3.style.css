@@ -1,0 +1,545 @@
+/**, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width 10vw;
+    font-size: xx-large;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 70px;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.container {
+    padding: 20px;
+}
+.hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.hobbies img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+.otros-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.otros-hobbies div {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    width: 520px;
+    height: 500px;
+    text-align: center;
+}*/
+
+:root {
+    --color-primario: #b5b5c5;
+    --color-secundario: #4444c7;
+    --color-terciario: #cbd1d5;
+    --color-acento: #e75151;
+    --color-texto: #26032f;
+    --color-texto-secundario: #340cc5;
+    --fuente-primaria: Arial, Helvetica, sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--fuente-primaria);
+    background: linear-gradient(120deg, #5378f3, #e89edd);
+    color: var(--color-texto);
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-texto);
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: var(--color-acento);
+  }
+
+  header {
+    background-color: var(--color-primario);
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnHJWOIsKq_KQYuWH9n2zwHdS_r-US88GeQ&s");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    color: var(--color-texto-secundario);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    justify-content: center;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  .Sobre_mi {
+  background-color: var(--color-secundario);
+  padding: 3rem 2rem;
+   }
+
+  .intro img  {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    align-items: center;
+    align-content: center;
+  }
+  
+  .Sobre_mi h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .grid-hobbies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .grid-hobbies article {
+    background-color: var(--color-terciario);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-hobbies article:hover {
+    transform: scale(1.02);
+  }
+
+  .grid-hobbies img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .grid-hobbies h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-size: 1.4em;
+  }
+
+  .grid-hobbies p {
+    padding: 0 1rem 1rem;
+    color: var(--color-texto-secundario);
+    flex: 1;
+    font-size: 1.2em;
+  }
+
+  .hobbies-container {
+    background-color: #1e1e2f3b;
+    padding: 3rem 2rem;
+  }
+
+  .hobbies-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .card_hobbies {
+    display: flex;
+    flex-direction: row; /* horizontal */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .card {
+    background-color: var(--color-primario);
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 400px;
+    min-width: 350px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+    font-size: 1.4em;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+    margin: 1rem;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .card p {
+    margin: 0 1rem 1rem;
+    color: var(--color-texto-secundario);
+    flex: 1;
+    text-align: center;
+  }
+
+/*personajes favoritos*/
+
+  #Personajes_favoritos h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .service-box {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+    padding: 2rem 2rem;
+  }
+
+  .service-box img {
+    width: 400px;
+    height: 250px;
+   }
+
+  .service-box p {
+    line-height: 1.5;
+  }
+  
+  /*.container-box {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    gap: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2em;
+    overflow: hidden;
+    justify-content: center;
+    margin-bottom: 7em;
+  }*/
+  .container-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  .container-box .service-box {
+    flex: 1 1 400px;
+    background-color: var(--color-primario);
+    margin: 0.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-box .service-box:hover {
+    transform: scale(1.1);
+  }
+
+/* BOMB-ATTACK*/
+
+#Bomb-attack h3 {
+  font-size: 2em;
+  text-align: center;
+  padding: 2rem;
+}
+
+#Bomb-attack{
+  background-color: #1e1e2f3b;
+  padding: 3rem 2rem;
+  }
+
+.bomb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+
+.bomb-container {
+    perspective: 1000px; /* Controla la profundidad de la perspectiva 3D */
+    width: 300px;
+    height: 200px;
+    display: flex;
+  }
+
+  .bomb {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+   }
+
+  .bomb-container:hover .bomb {
+    transform: rotateY(180deg);
+   }
+
+  .bomb-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Oculta la cara trasera cuando se gira */
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+   }
+
+  .bomb-front {
+    background-color: #3232b6;
+    color: #fff;
+    font-size:xx-large;
+  }
+
+  .bomb-back {
+    background-image: url(https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/4353/production/_105753271_gettyimages-955124060.jpg.webp);
+    background-size: cover;
+    color: #fff;
+    transform: rotateY(180deg); /* Para que esté “detrás” */
+  }
+
+  .bomb-back1 {
+    background-image: url(https://www.mapfre.com.pe/media/la-importancia-de-contar-con-un-extintor-en-casa-1.jpg);
+    background-size: cover;
+    color: #fff;
+    transform: rotateY(180deg); /* Para que esté “detrás” */
+  }
+
+  /*ANIMACION KEYFRAMES */
+
+  #animacion_keyframes h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .container_animation{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cuadradoacirculo {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: #ddd solid;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cuadrado {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(98, 26, 233);
+    color: white;
+    margin: 0 auto;
+    /* transition-property: width, color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+  }
+  
+  .cuadrado:hover {
+    background-color: rgb(29, 199, 117);
+    color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    transition-property: width, color;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;*/
+  }
+
+  .containerpelota {
+    width: 600px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border: #ddd solid;
+  }
+
+  .pelotaBox {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 200px;
+  }
+
+  .ball {
+    background: #b01ce6;
+    animation: bounceBox 1.5s infinite;
+    position: relative;
+    margin: 0 auto;
+    }
+
+  @keyframes bounceBox {
+    0%, 100% {
+      top: 0;
+    }
+    60% {
+      top: -60px;
+    }
+  }
+
+  .container_animation2{
+    gap: 80px;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+    border: #26032f solid;
+  }
+
+  .logo{
+
+  }
+
+  .slogan{
+
+  }
+
+  .imagen img{
+    width: 300px;
+    height: 200px7;
+
+  }
+
+  .sobre-seccion {
+    background-color: #2a2a3a;
+    padding: 3rem 2rem;
+  }
+
+  .sobre-seccion h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .sobre-seccion p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-texto-secundario);
+    line-height: 1.8;
+  }
+
+  footer {
+    background-color: var(--color-primario);
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  footer p {
+    color: var(--color-texto-secundario);
+    font-size: 0.9rem;
+  }

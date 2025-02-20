@@ -1,0 +1,54 @@
+/* Estilos para la sección plegable (details) */
+details {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  /* Quita el espacio extra que some browsers aplican al interior */
+  details > :not(summary) {
+    margin-top: 0.5rem;
+  }
+  
+  /* El summary se comporta como el “título” que se pliega y despliega */
+  summary {
+    cursor: pointer;
+    outline: none; /* Quita el contorno punteado al hacer clic */
+    list-style: none;
+    user-select: none; /* Evita la selección de texto accidental en el summary */
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem; /* Separación antes del contenido */
+  }
+  
+  /* Aplica estilos al h3 dentro del summary para que luzca como un título */
+  summary h3 {
+    margin: 0; /* Quita márgenes del h3 por defecto */
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Opcional: Ocultar el icono nativo del summary en Chrome / Safari */
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  /* Agrega un pequeño ícono “▸” o “▾” antes del summary */
+  summary::before {
+    content: "▸ ";
+    font-size: 1rem;
+    margin-right: 0.4rem;
+    transition: transform 0.2s ease;
+    color: #666;
+  }
+  
+  /* Cambia el ícono cuando el details está abierto */
+  details[open] summary::before {
+    content: "▾ ";
+    color: #666;
+  }
+  
